@@ -1,5 +1,5 @@
 <template>
   <div class="page-wrapper flex-center">
-    Content for About Page
+    Описание приложения
   </div>
 </template>

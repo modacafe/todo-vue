@@ -98,7 +98,7 @@ export const store = new Vuex.Store({
     },
     register(context, data) {
       return new Promise((resolve, reject) => {
-        axios.post('/register', {
+        $axios.post('/register', {
           name: data.name,
           email: data.email,
           password: data.password,

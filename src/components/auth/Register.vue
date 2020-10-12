@@ -1,6 +1,6 @@
 <template>
   <div class="page-wrapper login-form">
-    <h2 class="login-heading">Register</h2>
+    <h2 class="login-heading">Регистрация</h2>
     <form action="#" @submit.prevent="validateBeforeSubmit">
 
       <!-- <div v-if="successMessage" class="success-message">{{ successMessage }}</div> -->
@@ -8,12 +8,11 @@
       <div v-if="serverErrors" class="server-error">
         <div v-for="(value, key) in serverErrors" :key="key">
           {{ value[0] }}
-        </div>
-
+        </div> 
       </div>
 
       <div class="form-control">
-        <label for="name">Name</label>
+        <label for="name">Имя</label>
         <input type="text" name="name" id="name" class="login-input" :class="{ 'input-error': errors.has('name') }" v-model="name" v-validate="'required'">
         <span class="form-error">{{ errors.first('name') }}</span>
       </div>
@@ -25,13 +24,13 @@
       </div>
 
       <div class="form-control mb-more">
-        <label for="password">Password</label>
+        <label for="password">Пароль</label>
         <input type="password" name="password" id="password" class="login-input" :class="{ 'input-error': errors.has('password') }" v-model="password" v-validate="'required|min:6'">
         <span class="form-error">{{ errors.first('password') }}</span>
       </div>
 
       <div class="form-control">
-        <button type="submit" class="btn-submit">Create Account</button>
+        <button type="submit" class="btn-submit">Зарегистрироваться</button>
       </div>
 
     </form>

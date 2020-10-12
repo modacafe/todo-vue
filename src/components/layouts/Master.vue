@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <ul class="nav">
-      <li><router-link :to="{ name: 'home' }">Home</router-link></li>
-      <li><router-link :to="{ name: 'todo' }">App</router-link></li>
-      <li><router-link :to="{ name: 'about' }">About</router-link></li>
-      <li v-if="!loggedIn"><router-link :to="{ name: 'login' }">Login</router-link></li>
-      <li v-if="!loggedIn"><router-link :to="{ name: 'register' }">Register</router-link></li>
-      <li v-if="loggedIn"><router-link :to="{ name: 'logout' }">Logout</router-link></li>
+      <li><router-link :to="{ name: 'home' }">Главная</router-link></li>
+      <li><router-link :to="{ name: 'todo' }">Приложение</router-link></li>
+      <li><router-link :to="{ name: 'about' }">Описание</router-link></li>
+      <li v-if="!loggedIn"><router-link :to="{ name: 'login' }">Логин</router-link></li>
+      <li v-if="!loggedIn"><router-link :to="{ name: 'register' }">Регистрация</router-link></li>
+      <li v-if="loggedIn"><router-link :to="{ name: 'logout' }">Выход</router-link></li>
 
     </ul>
 
